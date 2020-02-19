@@ -1,33 +1,17 @@
 package practicaobjetos;
 
-import java.util.Scanner; //Librería para poder obtener datos del teclado.
-
-public class PersonaConAdquisicionDeDatos
+public class PersonaConAdquisicionDeDatos //Creación de la Clase "PersonaConAdquisicionDeDatos".
 {
 
 
-    public PersonaConAdquisicionDeDatos() //Dado que obtendremos los parametros del teclado, el campo entre parentesis, que es apra parametros, se deja en blanco.
+    public PersonaConAdquisicionDeDatos(String n, int e, int a, double p) //Creación del Constructor "PersonaConAdquisicionDeDatos" con los parametros "String Nombre, int Edad, int Altura, double Peso".
     {
-        Scanner EntradaNombre = new Scanner (System.in); //Se leerá una variable a partir de la entrada en teclado.
-        String Nombre = ""; //Se inicializa una variable de tipo String de identificador "Nombre" con valor "".
-        Scanner EntradaEdad = new Scanner (System.in); //Se leerá una variable a partir de la entrada en teclado.
-        int Edad = 0; //Se inicializa una variable de tipo String de identificador "Nombre" con valor "".
         
-        
-        
-        
+        String nombre; //Inicialización de la variable nombre con un valor de "" para que el Constructor en dado caso de que NO se le asignen valores a los parametros, tengan alguno por default, en este casom "".
+        int edad;       //Inicialización de la variable edad con un valor de 0 para que el Constructor en dado caso de que NO se le asignen valores a los parametros, tengan alguno por default, en este casom "0".
+        int altura;     //Inicialización de la variable altura con un valor de 0 para que el Constructor en dado caso de que NO se le asignen valores a los parametros, tengan alguno por default, en este casom "0".
+        double peso;    //Inicialización de la variable peso con un valor de 0 para que el Constructor en dado caso de que NO se le asignen valores a los parametros, tengan alguno por default, en este casom "0".
 
-        System.out.println("¿Cuál es tu nombre?"); //Se muestra el mensaje en pantalla.
-        Nombre = EntradaNombre.nextLine(); //Se introduce por el teclado los datos y se le asignan a la variable "Nombre".
-
-        System.out.println("¿Cuál es tu Edad?"); //Se muestra el mensaje en pantalla.
-        Edad = EntradaEdad.nextInt(); //Se introduce por el teclado los datos y se le asignan a la variable "Edad".
-
-        //En la escritura ".next" en seguida se escribe el tipo de dato que se introducirá, para Strings = "Line", apra int's = "Int"
-
-        System.out.println("Tu nombre es: "+Nombre); //Se muestra en la pantalla el mensaje: "Tu nombre es:" seguido de los datos dentro de la variable "Nombre".
-        System.out.println("Tu edad es: "+Edad); //Se muestra en la pantalla el mensaje: "Tu edad es:" seguido de los datos dentro de la variable "Edad".
-    
     }
 
 }

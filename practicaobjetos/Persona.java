@@ -26,36 +26,15 @@ package practicaobjetos;
 public class Persona 
 {
 
-    //Atributos
-    String Nombre;
-    int Edad;
-
-//Métodos
-
-
-    //Se coloca el nombre exactamente igual que el de la clase, pero no es un método que regrese algún valor de retorno, nis iqueira void.
-    //El método puede tener parametros, los cuales ayudan a inicializar los atributos, en este caso los párametros "Nombre" y "Edad".
-    public Persona(String Nombre,int Edad) 
+    public Persona(String Nombre,int Edad,int Altura,double Peso) 
     {
-        //Si se utiliza la siguiente manera, se tiene que poner también el guión bajo "_" en los arametros del método constructor.
-        //Nombre = _Nombre; //Se inicializa el atributo "Nombre" igual al valor introducido.
-        //Edad = _Edad; //Se inicializa el atributo "Edad" igual al valor introducido
-
-        //Si se utilzia este método, ni en los parametros ni en la asignación se utiliza el guión bajo "_".
-        //La palabra reservada "This" indica a Java que se está refieriendo al atributo y que recibirán los valores de los arguementos que se enviarán.
-        this.Nombre = Nombre; //Se inicializa el atributo "Nombre" igual al valor introducido.
-        this.Edad = Edad; //Se inicializa el atributo "Edad" igual al valor introducido
+        
+        String nombre;
+        int edad;
+        int altura;
+        double peso;
 
     }
 
-    //Método de tipo void que lo únicop que hace es mostrar los atributos introducidos en pantalla.
-
-    public void MostrarDatos()
-    {
-
-        System.out.println("El nombre es: "+Nombre); //Para mostrar en pantalla el atributo "Nombre" introducido.
-        System.out.println("La edad es: "+Edad); //Para mostrar en pantalla el atributo "Edad" introducido.
-
-    }
 
 }
